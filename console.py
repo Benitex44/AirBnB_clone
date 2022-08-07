@@ -178,7 +178,7 @@ class HBNBCommand(cmd.Cmd):
             try:
                 setattr(clschange, attributename, float(updatevalue))
                 storage.save()
-            except:
+            except NameError:
                 setattr(clschange, attributename, str(updatevalue))
                 storage.save()
 
