@@ -165,6 +165,7 @@ class HBNBCommand(cmd.Cmd):
         setattr(obj_value, arg[2], arg[3])
         obj_value.save()
 
+
 if __name__ == '__main__':
     """ Loops the CLI, prevents running on import
     """
