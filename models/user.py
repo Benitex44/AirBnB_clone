@@ -1,18 +1,18 @@
 #!/usr/bin/python3
-''' user module '''
+"""Implements the user's model"""
 from models.base_model import BaseModel
 
 
 class User(BaseModel):
-    '''
-    initation of User that inherits BaseModel class
+    """
+    Inherits from the BaseModel class and add user's functionalities
 
-    Public Class Attributes:
-    (string) email: initalized as empty string
-    (string) password: initalized as empty string
-    (string) first_name: initalized as empty string
-    (string) las_name: initalized as empty string
-    '''
+    Args:
+        email (str): the email of the user
+        password (str): the password of the user
+        first_name (str): the first name of the user
+        last_name (str): the last name of the user
+    """
     email = ""
     password = ""
     first_name = ""
